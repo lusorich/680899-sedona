@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Кайдановский](https://up.htmlacademy.ru/htmlcss/23/user/680899).
-* Наставник: `Неизвестно`.
+* Наставник: Никита Рогатнев (https://htmlacademy.ru/profile/nikita_rogatnev) .
 
 ---
 
