@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+</head>
+
+<body>
+	<header class="header">
+
+		<a href="index.html"><img src="img/logo.svg" alt="Логотип Седоны" width="140" height="70"></a>
+
+		<nav class="header-nav">	
+			
+			<ul class="header-nav-list">                                             
+				<li class="header-nav-item">
+					<a href="index.html">Информация</a>
+				</li>
+				<li class="header-nav-item">
+					<a href="photo.html">Фото и видео</a>
+				</li>
+				<li class="header-nav-item">
+					<a href="map.html">Карта штата</a>
+				</li>
+				<li class="header-nav-item-active">
+					<a href="#">Гостиницы</a>
+				</li>
+			</ul>
+
+		</nav>
+	</header>
+
+	<main>
+		<h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+
+		<section class="filters">
+			<h2 class="visually-hidden">Фильтры товаров</h2>
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+							<label for="filter-swimming-pool">Бассейн</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input" type="checkbox" name="parking" id="filter-parking">
+							<label for="filter-parking">Парковка</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
+							<label for="filter-wi-fi">Wi-Fi</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>Тип жилья:</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+							<label for="filter-hotel">Гостиница</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+							<label for="filter-motel">Мотель</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input" type="checkbox" name="apartment" id="filter-apartment" checked>
+							<label for="filter-apartment">Апартаменты</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<!-- Сложный фильтр на потом-->
+				<button type="submit">Показать</button>
+			</form>
+		</section>
+
+		<section class="catalog">
+			<h2 class="visually-hidden">Каталог жилья</h2>
+
+			<div class="sort-wrapper">
+				<span>Найдено: 3</span>
+				<span>Сортировка:</span>
+				<ul class="sort-btn-list">
+					<li class="sort-btn-item">
+						<a class="sort-btn" href="#">По цене</a>
+					</li>
+					<li class="sort-btn-item">
+						<a class="sort-btn" href="#">По типу</a>					
+					</li>
+					<li class="sort-btn-item">
+						<a class="sort-btn" href="#">По рейтингу</a>					
+					</li>
+				</ul>
+			</div>
+
+			<ul class="catalog-list">
+				<li class="catalog-item">
+					<a href="catalog-item.html">
+						<img src="#" alt="Фото жилья">
+						<h3>Amara resort & spa</h3>
+					</a>
+					<p>
+						Гостиница от 4000 Р.
+						<a class="detail-btn">Подробнее</a>
+						<a class="reserve-btn">Забронировать</a>
+					</p>
+					<h3>
+						Рейтинг:8.5
+					</h3>
+				</li>
+				<li class="catalog-item">
+					<a href="catalog-item.html">
+						<img src="#" alt="Фото жилья">
+						<h3>Desert quail inn</h3>
+					</a>
+					<p>
+						Мотель от 3000 Р.
+						<a class="detail-btn">Подробнее</a>
+						<a class="reserve-btn">Забронировать</a>
+					</p>
+					<h3>
+						Рейтинг:8.9
+					</h3>
+				</li>
+				<li class="catalog-item">
+					<a href="catalog-item.html">
+						<img src="#" alt="Фото жилья">
+						<h3>Villas at poco diablo</h3>
+					</a>
+					<p>
+						Апартаменты от 2000 Р.
+						<a class="detail-btn">Подробнее</a>
+						<a class="reserve-btn">Забронировать</a>
+					</p>
+					<h3>
+						Рейтинг:9.2
+					</h3>
+				</li>
+			</ul>
+		</section>
+
+
+
+	</main>
+
+	<footer class="footer">
+
+		<div class="hashtag-wrapper">
+			<a class="hashtag" href="#">#Visitsedona</a>
+		</div>
+
+		<ul class="social-btn-list">
+			<li class="social-btn-item">
+				<a href="#">Твиттер</a>
+			</li>
+			<li class="social-btn-item">
+				<a href="#">Фейсбук</a>
+			</li>
+			<li class="social-btn-item">
+				<a href="#">Ютуб</a>
+			</li>
+		</ul>
+
+		<div class="footer-copyright">
+			<span>Website by</span>
+			<a class="footer-copyright-img" href="https://htmlacademy.ru"><img src="img/logo_name.png" alt="HTML Academy" width="115" height="40"></a>
+		</div>
+	</footer>
+</body>
+</html>
