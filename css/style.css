@@ -1,6 +1,8 @@
 body {
 	margin:0;
 	padding:0;
+  margin-left: 40px;
+  margin-right: 40px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -10,12 +12,17 @@ body {
 	text-transform: uppercase;
 }
 
+.catalog-body {
+  line-height: 21px;
+}
+
 a {
 	text-decoration: none;
 }
 
 .header-nav {
 	font-weight: 700;
+	line-height: 26px;
 }
 
 .header-nav-list {
@@ -74,9 +81,87 @@ a {
 .hashtag {
 	font-size: 21px;
 	font-weight: 700;
+	line-height: 26px;
 
 	color: #000000;
 }
+
+.filter legend {
+	font-size: 16px;
+	font-weight: 700;
+
+	color: #ffffff;
+}
+
+.catalog h3 {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+.catalog span,
+.sort-btn {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sort-btn-list {
+	list-style: none;
+}
+
+.sort-btn {
+	color: #e1e1e1;
+
+	border-bottom: 1px dotted #e2edf4;
+}
+
+.sort-btn.active{
+	color: #81b3d2;
+
+	border-bottom: none;
+}
+
+.sort-triangle-list {
+	list-style: none;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-list h1 {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.catalog-item-name {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+
+	color: #000000;
+}
+
+.catalog-item-info span {
+	color: #333333;
+}
+
+.detail-btn,
+.reserve-btn {
+	font-weight: 700;
+
+	color: #ffffff;
+}
+
+.catalog-item-raiting span {
+	color: #666666;
+}
+
+
+
+
+
 
 
 
