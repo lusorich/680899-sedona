@@ -8,7 +8,8 @@
   </head>
   <body class="catalog-body">
     <header class="header">
-      <a href="index.html"><img src="img/logo.svg" alt="Логотип Седоны" width="140" height="70"></a>
+      <img class="header-logo" src="img/logo.svg" alt="Логотип Седоны" width="140" height="70">
+      <h2 class="visually-hidden">Меню сайта</h2>
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-item">
@@ -21,7 +22,7 @@
             <a href="map.html">Карта штата</a>
           </li>
           <li class="header-nav-item active">
-          	<a>Гостиницы</a>
+            <a>Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -30,9 +31,10 @@
       <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter" method="post" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
+            <span class="visually-hidden">Отметьте инфраструктуру, можно несколько</span>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
@@ -50,6 +52,7 @@
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
+            <span class="visually-hidden">Отметьте тип жилья, можно несколько</span>
             <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -65,12 +68,11 @@
               </li>
             </ul>
           </fieldset>
-          <!-- Сложный фильтр на потом-->
           <button type="submit">Показать</button>
+          <!-- сложный фильтр на потом !-->
         </form>
       </section>
       <section class="catalog">
-        <h2 class="visually-hidden">Каталог жилья</h2>
         <div class="sort-wrapper">
           <h3>Найдено: 3</h3>
           <div class="sort-phrase">
@@ -96,6 +98,7 @@
             </li>
           </ul>
         </div>
+        <h2 class="visually-hidden">Найденное жильё</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <article>
@@ -153,17 +156,18 @@
     </main>
     <footer class="footer">
       <div class="hashtag-wrapper">
+      	<span class="visually-hidden">Распространяйте хэштег</span>
         <a class="hashtag" href="#">#Visitsedona</a>
       </div>
       <ul class="social-btn-list">
         <li class="social-btn-item">
-          <a href="#">Твиттер</a>
+          <a href="#"><img src="img/twitter.svg" alt="Седона в Твиттере" width="17" height="15"></a>
         </li>
         <li class="social-btn-item">
-          <a href="#">Фейсбук</a>
+          <a href="#"><img src="img/facebook.svg" alt="Седона в Фейсбуке" width="12" height="22"></a>
         </li>
         <li class="social-btn-item">
-          <a href="#">Ютуб</a>
+          <a href="#"><img src="img/youtube.svg" alt="Седона в Ютубе" width="20" height="16"></a>
         </li>
       </ul>
       <div class="copyright">

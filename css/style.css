@@ -20,6 +20,11 @@ a {
 	text-decoration: none;
 }
 
+
+.header-logo {
+	margin-left: 530px;
+}
+
 .header-nav {
 	font-weight: 700;
 	line-height: 26px;
@@ -157,13 +162,3 @@ a {
 .catalog-item-raiting span {
 	color: #666666;
 }
-
-
-
-
-
-
-
-
-
-
