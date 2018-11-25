@@ -137,12 +137,15 @@
       </div>
       <ul class="social-btn-list">
         <li class="social-btn-item">
+        	<span class="visually-hidden">Седона в Твиттере</span>
           <a href="#"><img src="img/twitter.svg" alt="Седона в Твиттере" width="17" height="15"></a>
         </li>
         <li class="social-btn-item">
+        	<span class="visually-hidden">Седона в Фейсбуке</span>
           <a href="#"><img src="img/facebook.svg" alt="Седона в Фейсбуке" width="12" height="22"></a>
         </li>
         <li class="social-btn-item">
+        	<span class="visually-hidden">Седона в Ютубе</span>
           <a href="#"><img src="img/youtube.svg" alt="Седона в Ютубе" width="20" height="16"></a>
         </li>
       </ul>
@@ -150,18 +153,20 @@
         <span>Website by</span>
         <a class="copyright-img" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="115" height="40"></a>
       </div>
-      <section class="search-hotel-popup">
+    </footer>
+
+    <section class="search-hotel-popup">
         <h2 class="visually-hidden">Параметры поиска гостиницы</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="chose-date-arrival">Дата заезда</label>
             <input class="chose-date" type="text" id="chose-date-arrival" name="date-arrival" value="24 апреля 2017">
-            <img src="img/calendar.svg" alt="Календарь">
+            <button type="button"><img src="img/calendar.svg" alt="Календарь"></button>
           </p>
           <p>
             <label for="chose-date-departure">Дата выезда</label>
             <input class="chose-date" type="text" id="chose-date-departure" name="date-departure" value="4 июля 2017">
-            <img src="img/calendar.svg" alt="Календарь">
+            <button type="button"><img src="img/calendar.svg" alt="Календарь"></button>
           </p>
           <div class="chose-adults-wrapper">
             <label for="chose-number-adults">Взрослые:</label>
@@ -178,6 +183,5 @@
           <button type="submit">Найти</button>
         </form>
       </section>
-    </footer>
   </body>
 </html>
