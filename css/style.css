@@ -1,8 +1,6 @@
 body {
 	margin:0;
 	padding:0;
-  margin-left: 40px;
-  margin-right: 40px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -16,26 +14,89 @@ body {
   line-height: 21px;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
 	text-decoration: none;
 }
 
+.header {
+	max-width: 1200px;
+
+	margin-right: 40px;
+	margin-left: 40px;
+
+	position: relative;
+	display: flex;
+}
 
 .header-logo {
-	margin-left: 530px;
+	position: absolute;
+
+	left: 45%;
 }
 
 .header-nav {
+	width: 100%;
+	min-height: 55px;
+
 	font-weight: 700;
 	line-height: 26px;
 }
 
 .header-nav-list {
+	margin:0;
+	padding: 0;
+	margin-top: 15px;
+	margin-bottom: 18px;
+
+	display: flex;
+
 	list-style: none;
+}
+
+.header-nav-item {
+	width: 20%;
+}
+
+.header li:nth-of-type(1) {
+	margin-left: 6%;
+}
+.header li:nth-of-type(2) {
+	margin-right: 3%;
+}
+.header li:nth-of-type(3) {
+	text-align: end;
+
+	margin-left: 3%;
+}
+.header li:nth-of-type(4) {
+	text-align: end;
+
+	margin-right: 6%;
 }
 
 .header-nav a {
 	color: #000000;
+}
+
+.container {
+	margin-right: 40px;
+	margin-left: 40px;
 }
 
 .info-wrapper h1 {
