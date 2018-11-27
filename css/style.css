@@ -159,19 +159,63 @@ a {
 	color: #ffffff;
 }
 
+.chose-date {
+	font: inherit;
+
+	box-sizing: border-box;
+
+	width: 345px;
+
+	margin:0;
+	padding:0;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+
+}
+
+.search-hotel-popup {
+	font-weight: 700;
+}
+
+.search-hotel-popup input {
+	font-weight: 700;
+}
+
+.search-btn {
+	font-size: 21px;
+
+	color:#ffffff;
+}
+
 .hashtag {
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 26px;
 
 	color: #000000;
 }
 
+.social-btn-list {
+	list-style: none;
+}
+/* Стилизация каталога */
 .filter legend {
 	font-size: 16px;
 	font-weight: 700;
 
 	color: #ffffff;
+}
+
+.filter ul {
+	list-style: none;
+}
+
+.filter-option label {
+	color: white;
+}
+
+form button {
+	color: white;
 }
 
 .catalog h3 {
