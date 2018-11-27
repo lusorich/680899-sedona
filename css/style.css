@@ -214,7 +214,7 @@ a {
 	color: white;
 }
 
-form button {
+.show-btn {
 	color: white;
 }
 
@@ -224,7 +224,7 @@ form button {
 	font-weight: 700;
 }
 
-.catalog span,
+.catalog-sorting,
 .sort-btn {
 	font-size: 12px;
 	line-height: 18px;
@@ -261,10 +261,6 @@ form button {
 }
 
 .catalog-item-name {
-	font-size: 21px;
-	font-weight: 700;
-	line-height: 26px;
-
 	color: #000000;
 }
 
