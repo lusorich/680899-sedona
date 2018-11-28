@@ -99,6 +99,7 @@ a {
 }
 
 .container {
+	max-width: 1200px;
 	margin-right: 40px;
 	margin-left: 40px;
 }
@@ -114,6 +115,14 @@ a {
 	top:132px;
 }
 
+.info-wrapper {
+	margin: 0 auto;
+
+	width: 570px;
+
+	text-align: center;
+}
+
 .info-wrapper h1 {
 	font-size: 21px;
 	font-weight: 700;
@@ -126,7 +135,27 @@ a {
 }
 
 .reason {
+	display: flex;
+
+	text-align: center;
+
 	color: #ffffff;
+}
+
+.reason-content {
+	padding-top: 45px;
+
+	width: 400px;
+
+	background-color: #81b3d2;
+
+}
+.recommended {
+	display: flex;
+}
+
+.reason.second {
+	flex-direction: row-reverse;
 }
 
 .reason h2,
