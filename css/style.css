@@ -151,6 +151,11 @@ a {
 
 }
 
+.reason-img {
+	line-height: 0;
+	font-size: 0;
+}
+
 .recommended {
 	display: flex;
 
@@ -261,9 +266,21 @@ a {
 
 .copyright {
 	width: 328px;
+
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+
+	padding-left: 100px;
 }
 
+.copyright span {
+	padding-right: 6px;
+}
 .hashtag-wrapper {
+	box-sizing: border-box;
+	padding-left: 60px;
+
 	width:328px;
 }
 
@@ -281,6 +298,7 @@ a {
 	padding:0;
 
 	display: flex;
+	justify-content: center;
 
 	list-style: none;
 }
@@ -288,10 +306,16 @@ a {
 .social-btn-item {
 	margin-left: 6px;
 
+	background-color: #81b3d2;
+}
+
+.social-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	width: 46px;
 	height: 50px;
-
-	background-color: #81b3d2;
 }
 /* Стилизация каталога */
 
