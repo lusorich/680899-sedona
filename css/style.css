@@ -111,7 +111,8 @@ a {
 .img-welcome {
 	position: absolute;
 
-	left:410px;
+	left:50%;
+	margin-left: -230px;
 	top:132px;
 }
 
@@ -145,6 +146,10 @@ a {
 }
 
 .reason-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	text-align: center;
 
 	padding-top: 45px;
@@ -155,6 +160,10 @@ a {
 
 }
 
+.reason-content p {
+	max-width: 302px;
+}
+
 .reason-img {
 	line-height: 0;
 	font-size: 0;
@@ -163,14 +172,15 @@ a {
 .recommended {
 	display: flex;
 
-	justify-content: space-around;
-
 	margin-top: 57px;
-	margin-left: 73px;
 }
 
 .recommended-content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	text-align: center;
+
 	width: 400px;
 }
 
@@ -185,6 +195,14 @@ a {
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 21px;
+}
+
+.recommended-content p {
+	max-width: 290px;
+}
+
+.reason-content.item p {
+	max-width: 260px;
 }
 
 .reason h2 {
