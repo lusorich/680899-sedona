@@ -258,6 +258,8 @@ a {
 }
 
 .search-hotel-btn {
+	position:relative;
+
 	margin: 0 auto;
 	margin-top:50px;
 
@@ -286,7 +288,7 @@ a {
 	padding-top: 6px;
 	padding-bottom: 6px;
 	padding-left: 12px;
-	margin-left: 20px;
+	margin-left: 17px;
 
 	background-color: #f2f2f2;
 
@@ -314,9 +316,17 @@ a {
 }
 
 .search-hotel-popup form {
+	position: absolute;
+	left:0;
+	right:0;
+
+	text-align: start;
+
 	display: flex;
 	padding-left: 55px;
 	padding-right: 55px;
+
+	background-color: #ffffff;
 
 	flex-direction: column;
 }
