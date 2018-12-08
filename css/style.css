@@ -278,7 +278,6 @@ a {
 	font: inherit;
 	text-transform: uppercase;
 
-	position: relative;
 	box-sizing: border-box;
 
 	width: 345px;
@@ -288,7 +287,6 @@ a {
 	padding-top: 6px;
 	padding-bottom: 6px;
 	padding-left: 12px;
-	margin-left: 17px;
 
 	background-color: #f2f2f2;
 
@@ -296,15 +294,35 @@ a {
 
 }
 
+.chose-wrapper {
+	display: flex;
+}
+
 .calendar-btn {
 	position: absolute;
 
-	border: 0 none;
+	width:30px;
+	height: 38px;
 
+	border: 0 none;
+	
+	top:0;
+	bottom:0;
+	right:0;
 	margin:0;
 	padding: 0;
 
-	background-color: #ffffff;
+	background-color: #f2f2f2;
+
+	cursor: pointer;
+}
+
+.chose-wrapper:nth-child(1) {
+	margin-top: 55px;
+}
+
+.chose-wrapper:nth-child(2) {
+	margin-top: 29px;
 }
 
 .search-hotel-popup {
@@ -325,6 +343,7 @@ a {
 	display: flex;
 	padding-left: 55px;
 	padding-right: 55px;
+	margin-top: 34px;
 
 	background-color: #ffffff;
 
@@ -335,11 +354,88 @@ a {
 	font-weight: 700;
 }
 
+.chose-date-wrapper {
+	position: relative;
+}
+
+.search-hotel-popup label {
+	width:115px;
+}
+
+.increase {
+	border:0 none;
+	
+	width:38px;
+	height: 38px;
+
+	position: absolute;
+
+	left:0;
+	top:0;
+	bottom:0;
+
+	background-color: #f2f2f2;
+
+	cursor: pointer;
+
+}
+
+.decrease {
+	border:0 none;
+	
+	width:38px;
+	height: 38px;
+
+	position: absolute;
+
+	right:0;
+	top:0;
+	bottom:0;
+
+	background-color: #f2f2f2;
+
+	cursor: pointer;
+}
+
+.chose-people-wrapper {
+	margin-top: 30px;
+
+	display: flex;
+}
+
+.chose-number-wrapper {
+	display: flex;
+
+	position: relative;
+}
+
+.chose-number-wrapper input {
+	padding-top: 14px;
+	padding-bottom: 14px;
+
+	box-sizing: border-box;
+
+	height: 38px;
+}
+
+.chose-number {
+	text-align: center;
+
+	margin:0;
+	padding:0;
+
+	border: 0 none;
+
+	background-color: #f2f2f2;
+	max-width: 115px;
+}
 .search-btn {
 	background-color: #81b3d2;
 
 	border: 0 none;
-
+	
+	margin-top: 55px;
+	margin-bottom: 55px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 
@@ -347,6 +443,13 @@ a {
 	text-transform: uppercase;
 
 	color:#ffffff;
+}
+
+.chose-people-wrapper label:nth-of-type(2) {
+	box-sizing: border-box;
+	text-align: end;
+
+	padding-right: 25px;
 }
 
 .footer {
