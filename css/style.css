@@ -514,16 +514,19 @@ a {
 }
 /* Стилизация каталога */
 
+
+
 .filters {
 	background-image: url(../img/filter-Background-full.jpg);
 	background-size: 100% auto;
 	background-position: center;
+
+	padding-top: 28px;
+	padding-bottom: 30px;
 }
 
 .filter {
 	display: flex;
-
-	padding-top: 28px;
 
 }
 
@@ -534,17 +537,30 @@ a {
 	padding:0;
 }
 
-.filter-wrapper.first {
+
+.filter-wrapper-first {
 	padding-left: 73px;
 
-	width: 240px;
+	min-width: 240px;
 }
 
-.filter-wrapper.second {
-	width: 240px;
+.filter-wrapper-second {
+	box-sizing: border-box;
+
+	padding-left:15px;
+
+	min-width: 240px;
+}
+
+.filter-wrapper-first ul,
+.filter-wrapper-second ul {
+	margin:0;
+	padding:0;
 }
 
 .filter legend {
+	margin-bottom: 25px;
+
 	font-size: 16px;
 	font-weight: 700;
 
@@ -559,15 +575,35 @@ a {
 	color: white;
 }
 
+.filter-option {
+	padding-left: 40px;
+}
+
+.filter-option:nth-child(2),
+.filter-option:nth-child(3) {
+	margin-top: 23px;
+}
+
 .show-btn {
 	color: white;
 }
 
 .sort-wrapper {
-	display: flex;
+  padding-top: 29px;
+  padding-bottom: 29px;
 
-	padding-left: 73px;
-	padding-right: 73px;
+	display: flex;
+	align-items: center;
+
+}
+
+.sort-wrapper h3 {
+	margin:0;
+	padding-right: 50px;
+}
+
+.sort-phrase {
+	padding-right: 40px;
 }
 
 .catalog h3 {
@@ -595,6 +631,14 @@ a {
 	color: #e1e1e1;
 
 	border-bottom: 1px dotted #e2edf4;
+}
+
+.sort-btn-item:nth-child(1) {
+	padding-right: 30px;
+}
+
+.sort-btn-item:nth-child(2) {
+	padding-right: 32px;
 }
 
 .sort-btn.active{
