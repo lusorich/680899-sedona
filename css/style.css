@@ -664,6 +664,8 @@ a {
 }
 
 .catalog-item {
+	border-bottom: 1px solid #e5e5e5;
+	
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -682,8 +684,34 @@ a {
 	color: #000000;
 }
 
+.catalog-item-info {
+	margin-left: 30px;
+}
+
+.catalog-item-info h1 {
+	margin:0;
+	padding:0;
+}
+
 .catalog-item-info span {
 	color: #333333;
+}
+
+.catalog-item-info-wrapper {
+	display: flex;
+
+	padding-top: 7px;
+}
+
+.catalog-item-phrase-price {
+		margin-left: 6px;
+}
+.catalog-item-phrase-wrapper {
+	min-width: 110px;
+}
+
+.catalog-btn-info-wrapper {
+	padding-top: 12px;
 }
 
 .detail-btn,
