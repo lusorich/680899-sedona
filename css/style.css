@@ -13,7 +13,6 @@ body {
 
 .catalog-body {
 	line-height: 21px;
-
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -34,6 +33,14 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	box-shadow: 0 5px 15px 0 rgba(0,1,1,0.2);
+	background-color: #ffffff;
 }
 
 .header {
@@ -97,19 +104,11 @@ a {
 	color: #000000;
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-
-	box-shadow: 0 5px 15px 0 rgba(0,1,1,0.2);
-	background-color: #ffffff;
-}
-
-.img-back-wrapper{
+.img-background-wrapper{
 	position: relative;
 }
 
-.img-back {
+.img-background-mask {
 	bottom: 8px;
 	position: absolute;
 }
@@ -199,8 +198,6 @@ a {
 
 	width: 400px;
 }
-
-
 
 .reason.second {
 	flex-direction: row-reverse;
@@ -445,6 +442,7 @@ a {
 	background-color: #f2f2f2;
 	max-width: 115px;
 }
+
 .search-btn {
 	background-color: #81b3d2;
 
@@ -488,6 +486,7 @@ a {
 .copyright span {
 	padding-right: 6px;
 }
+
 .hashtag-wrapper {
 	box-sizing: border-box;
 	padding-left: 60px;
@@ -528,10 +527,8 @@ a {
 	width: 46px;
 	height: 50px;
 }
+
 /* Стилизация каталога */
-
-
-
 .filters {
 	background-image: url(../img/filter-Background-full.jpg);
 	background-size: 100% auto;
@@ -552,7 +549,6 @@ a {
 	margin:0;
 	padding:0;
 }
-
 
 .filter-wrapper-first {
 	padding-left: 73px;

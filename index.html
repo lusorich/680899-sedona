@@ -30,9 +30,9 @@
         </nav>
       </header>
       <main>
-        <div class="img-back-wrapper">    
+        <div class="img-background-wrapper">    
           <img class="img-background" src="img/background.jpg" alt="Горы Седоны" width="1200" height="800">
-          <img class="img-back" src="img/polygon.svg">
+          <img class="img-background-mask" src="img/polygon.svg">
         </div>
         <img class="img-welcome" src="img/welcome.svg" alt="Приветствие" width="459" height="353">
         <div class="info-wrapper">
@@ -137,43 +137,33 @@
               <div class="search-hotel-popup">
                 <h2 class="visually-hidden">Параметры поиска гостиницы</h2>
                 <form action="https://echo.htmlacademy.ru" method="post">
-
-
-
-                 <div class="chose-wrapper">
+                  <div class="chose-wrapper">
                     <label for="chose-date-arrival">Дата заезда:</label>
-
-
                     <div class="chose-date-wrapper">
-                     <input class="chose-date" type="text" id="chose-date-arrival" name="date-arrival" value="24 апреля 2017">
-                     <button class="calendar-btn" type="button"><img src="img/calendar.svg" alt="Календарь"></button>
+                      <input class="chose-date" type="text" id="chose-date-arrival" name="date-arrival" value="24 апреля 2017">
+                      <button class="calendar-btn" type="button"><img src="img/calendar.svg" alt="Календарь"></button>
                     </div>
                   </div>
-
-                
-                   <div class="chose-wrapper">
+                  <div class="chose-wrapper">
                     <label for="chose-date-departure">Дата выезда:</label>
                     <div class="chose-date-wrapper">
-                     <input class="chose-date" type="text" id="chose-date-departure" name="date-departure" value="4 июля 2017">
-                     <button class="calendar-btn" type="button"><img src="img/calendar.svg" alt="Календарь"></button>
+                      <input class="chose-date" type="text" id="chose-date-departure" name="date-departure" value="4 июля 2017">
+                      <button class="calendar-btn" type="button"><img src="img/calendar.svg" alt="Календарь"></button>
                     </div>
                   </div>
-
-                 
                   <div class="chose-people-wrapper">
-
                     <label for="chose-number-adults">Взрослые:</label>
-                  <div class="chose-number-wrapper">
-                    <button class="decrease" type="button">-</button>
-                    <input class="chose-number" type="text" name="number" id="chose-number-adults" value="2">
-                    <button class="increase" type="button">+</button>
-                  </div>
+                    <div class="chose-number-wrapper">
+                      <button class="decrease" type="button">-</button>
+                      <input class="chose-number" type="text" name="number" id="chose-number-adults" value="2">
+                      <button class="increase" type="button">+</button>
+                    </div>
                     <label for="chose-number-childrens">Дети:</label>
-                  <div class="chose-number-wrapper">
-                    <button class="decrease" type="button">-</button>
-                    <input class="chose-number" type="text" name="number" id="chose-number-childrens" value="0">
-                    <button class="increase" type="button">+</button>
-                  </div>
+                    <div class="chose-number-wrapper">
+                      <button class="decrease" type="button">-</button>
+                      <input class="chose-number" type="text" name="number" id="chose-number-childrens" value="0">
+                      <button class="increase" type="button">+</button>
+                    </div>
                   </div>
                   <button class="search-btn" type="submit">Найти</button>
                 </form>
