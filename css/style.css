@@ -128,7 +128,7 @@ a {
 
 	z-index:1;
 
-	top:201px;
+	top:220px;
 }
 
 .img-welcome {
@@ -218,11 +218,48 @@ a {
 }
 
 .recommended-content {
+	position: relative;
+
 	padding-top:105px;
 
 	text-align: center;
 
 	width: 400px;
+}
+
+.recommended-content::before {
+	content:"";
+  
+  position: absolute;
+
+  top:0;
+}
+
+.recommended-content:nth-child(1)::before {
+	background-image: url(../img/icon-1.svg);
+
+	width: 75px;
+	height: 72px;
+
+	left:160px;
+}
+
+.recommended-content:nth-child(2)::before {
+	background-image: url(../img/icon-3.svg);
+
+	width: 74px;
+	height: 70px;
+
+	left:162px;
+}
+
+.recommended-content:nth-child(3)::before {
+	background-image: url(../img/icon-2.svg);
+
+	width: 64px;
+	height: 76px;
+
+	left:168px;
 }
 
 .reason.second {
