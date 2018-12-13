@@ -829,9 +829,39 @@ a {
 }
 
 .catalog-item-raiting {
+	position: relative;
+
+	margin-top: auto;
 	margin-left: auto;
 }
 
+
+.catalog-item-raiting-star {
+	display: flex;
+	flex-direction: row-reverse;
+
+	margin-bottom: 55px;
+}
+
+.catalog-item-raiting-star-item {
+	content:"";
+
+	width:18px;
+	height: 17px;
+
+	margin-right: 5px;
+
+	background-image: url(../img/star.svg)
+
+}
+
 .catalog-item-raiting span {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 16px;
+	padding-right: 13px;
+
+	background-color: #f2f2f2;
+
 	color: #666666;
 }
