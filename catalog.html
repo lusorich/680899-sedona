@@ -39,7 +39,7 @@
                 <legend>Инфраструктура:</legend>
                 <span class="visually-hidden">Отметьте инфраструктуру, можно несколько</span>
                 <ul>
-                  <li class="filter-option">
+                  <li class="filter-option active">
                     <input class="visually-hidden filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
                     <label for="filter-swimming-pool">Бассейн</label>
                   </li>
@@ -59,24 +59,43 @@
                 <legend>Тип жилья:</legend>
                 <span class="visually-hidden">Отметьте тип жилья, можно несколько</span>
                 <ul>
-                  <li class="filter-option">
+                  <li class="filter-option active">
                     <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
                     <label for="filter-hotel">Гостиница</label>
                   </li>
-                  <li class="filter-option">
+                  <li class="filter-option active">
                     <input class="visually-hidden filter-input" type="checkbox" name="motel" id="filter-motel" checked>
                     <label for="filter-motel">Мотель</label>
                   </li>
-                  <li class="filter-option">
+                  <li class="filter-option active">
                     <input class="visually-hidden filter-input" type="checkbox" name="apartment" id="filter-apartment" checked>
                     <label for="filter-apartment">Апартаменты</label>
                   </li>
                 </ul>
               </fieldset>
             </div>
-            <button class="show-btn" type="submit">Показать</button>
-            <!-- сложный фильтр на потом !-->
-          </form>
+
+            <div class="range-filter">
+            <form action="https://echo.htmlacademy.ru">
+              <fieldset class="multiply-filter">
+                <legend>Стоимость в сутки (р):</legend>
+                 <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0">
+                   </label>
+                   <label class="max-price">до <input name="max-price" type="text" value="3000">
+                   </label>
+                 </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </fieldset>
+              <button class="show-btn" type="submit">Показать</button>
+            </form>
+            </div>
         </section>
         <section>
           <div class="sort-wrapper">
