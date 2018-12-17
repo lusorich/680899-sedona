@@ -405,14 +405,17 @@ a {
 
 	border:0 none;
 
-}
+	outline: none;
 
+}
 .chose-date:hover {
 	background-color: #ebebeb;
 }
 
 .chose-date:focus {
 	background-color: #ffffff;
+	
+	box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
 .chose-wrapper {
@@ -433,11 +436,22 @@ a {
 	margin:0;
 	padding: 0;
 
-	background-color: #f2f2f2;
+	background-color: transparent;
 
 	cursor: pointer;
 }
 
+.calendar-icon {
+	fill: #cacaca;
+}
+
+.calendar-icon:hover {
+	fill: #000000;
+}
+
+.calendar-icon:active {
+	fill: #81b3d2;
+}
 
 .chose-wrapper:nth-child(1) {
 	margin-top: 55px;
@@ -1330,8 +1344,6 @@ footer.index {
 }
 
 .catalog-item-raiting-star-item {
-	content:"";
-
 	width:18px;
 	height: 17px;
 
