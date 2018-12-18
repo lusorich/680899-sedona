@@ -15,7 +15,9 @@ body {
 	line-height: 21px;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -841,24 +843,15 @@ footer.index {
 
 .filter-option {
 	position: relative;
+}
 
+.filter-checkbox {
 	padding-left: 40px;
+
+	user-select: none;
 }
 
-.filter-option.active::before {
-	content: "";
-
-	position: absolute;
-	left:0;
-	bottom: 1px;
-
-	width:27px;
-	height:23px;
-
-	background-image: url(../img/checkbox-on.svg);
-}
-
-.filter-option::before {
+.filter-checkbox::before {
 	content: "";
 
 	position: absolute;
@@ -869,6 +862,19 @@ footer.index {
 	height:23px;
 
 	background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-input:checked ~ .filter-checkbox::before {
+	content: "";
+
+	position: absolute;
+	left:0;
+	bottom: 1px;
+
+	width:27px;
+	height:23px;
+
+	background-image: url(../img/checkbox-on.svg);
 }
 
 .filter-option:nth-child(2),
@@ -1343,17 +1349,19 @@ footer.index {
 	margin-bottom: 55px;
 }
 
-.catalog-item-raiting-star-item {
+.raiting-star {
 	width:18px;
 	height: 17px;
 
 	margin-right: 5px;
 
+	font-size: 0;
+
 	background-image: url(../img/star.svg)
 
 }
 
-.catalog-item-raiting span {
+.raiting {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 16px;

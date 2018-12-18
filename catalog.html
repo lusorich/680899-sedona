@@ -15,7 +15,7 @@
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-phrase" href="index.html">Информация</a>
+              <a class="header-nav-phrase" href="info.html">Информация</a>
             </li>
             <li class="header-nav-item">
               <a class="header-nav-phrase" href="photo.html">Фото и видео</a>
@@ -39,17 +39,17 @@
                 <legend>Инфраструктура:</legend>
                 <span class="visually-hidden">Отметьте инфраструктуру, можно несколько</span>
                 <ul>
-                  <li class="filter-option active">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input" type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
-                    <label for="filter-swimming-pool">Бассейн</label>
+                    <label class="filter-checkbox" for="filter-swimming-pool">Бассейн</label>
                   </li>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input" type="checkbox" name="parking" id="filter-parking">
-                    <label for="filter-parking">Парковка</label>
+                    <label class="filter-checkbox" for="filter-parking">Парковка</label>
                   </li>
                   <li class="filter-option">
                     <input class="visually-hidden filter-input" type="checkbox" name="wi-fi" id="filter-wi-fi">
-                    <label for="filter-wi-fi">Wi-Fi</label>
+                    <label class="filter-checkbox" for="filter-wi-fi">Wi-Fi</label>
                   </li>
                 </ul>
               </fieldset>
@@ -59,17 +59,17 @@
                 <legend>Тип жилья:</legend>
                 <span class="visually-hidden">Отметьте тип жилья, можно несколько</span>
                 <ul>
-                  <li class="filter-option active">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
-                    <label for="filter-hotel">Гостиница</label>
+                    <label class="filter-checkbox" for="filter-hotel">Гостиница</label>
                   </li>
-                  <li class="filter-option active">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input" type="checkbox" name="motel" id="filter-motel" checked>
-                    <label for="filter-motel">Мотель</label>
+                    <label class="filter-checkbox" for="filter-motel">Мотель</label>
                   </li>
-                  <li class="filter-option active">
+                  <li class="filter-option">
                     <input class="visually-hidden filter-input" type="checkbox" name="apartment" id="filter-apartment" checked>
-                    <label for="filter-apartment">Апартаменты</label>
+                    <label class="filter-checkbox" for="filter-apartment">Апартаменты</label>
                   </li>
                 </ul>
               </fieldset>
@@ -141,13 +141,13 @@
                   </div>
                 </div>
                 <div class="catalog-item-raiting">
-                  <div class="catalog-item-raiting-star">
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                  </div>
-                  <span>Рейтинг: 8.5</span>
+                  <span class="catalog-item-raiting-star" aria-label="4 звезды">
+                  <span class="raiting-star">Звезда</span>
+                  <span class="raiting-star">Звезда</span>
+                  <span class="raiting-star">Звезда</span>
+                  <span class="raiting-star">Звезда</span>
+                  </span>
+                  <span class="raiting">Рейтинг: 8.5</span>
                 </div>
               </article>
             </li>
@@ -168,12 +168,12 @@
                   </div>
                 </div>
                 <div class="catalog-item-raiting">
-                  <div class="catalog-item-raiting-star">
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                  </div>
-                  <span>Рейтинг: 8.9</span>
+                  <span class="catalog-item-raiting-star" aria-label="3 звезды">
+                  <span class="raiting-star">Звезда</span>
+                  <span class="raiting-star">Звезда</span>
+                  <span class="raiting-star">Звезда</span>
+                  </span>
+                  <span class="raiting">Рейтинг: 8.9</span>
                 </div>
               </article>
             </li>
@@ -194,11 +194,11 @@
                   </div>
                 </div>
                 <div class="catalog-item-raiting">
-                  <div class="catalog-item-raiting-star">
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                    <div class="catalog-item-raiting-star-item" aria-label="Звезда для отображения рейтинга"> </div>
-                  </div>
-                  <span>Рейтинг: 9.2</span>
+                  <span class="catalog-item-raiting-star" aria-label="2 звезды">
+                  <span class="raiting-star">Звезда</span>
+                  <span class="raiting-star">Звезда</span>
+                  </span>
+                  <span class="raiting">Рейтинг: 9.2</span>
                 </div>
               </article>
             </li>
@@ -212,22 +212,24 @@
         </div>
         <ul class="social-btn-list">
           <li class="social-btn-item">
-            <span class="visually-hidden">Седона в Твиттере</span>
             <a class="social-btn twitter" href="#">
+            <span class="visually-hidden">Седона в Твиттере</span>
             </a>
           </li>
           <li class="social-btn-item">
+            <a class="social-btn facebook" href="#">
             <span class="visually-hidden">Седона в Фейсбуке</span>
-            <a class="social-btn facebook" href="#"></a>
+            </a>
           </li>
           <li class="social-btn-item">
+            <a class="social-btn youtube" href="#">
             <span class="visually-hidden">Седона в Ютубе</span>
-            <a class="social-btn youtube" href="#"></a>
+            </a>
           </li>
         </ul>
         <div class="copyright">
           <span>Website by</span>
-          <a class="copyright-logo" href="https://up.htmlacademy.ru/htmlcss/23">
+          <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <svg class="htmlacademy" width="115px" height="41px" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
               <title>HTML Academy</title>
               <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,395.17,349.23,395.17,350.33Z" transform="translate(-355.09 -323.29)" />
