@@ -33,7 +33,7 @@
         <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
         <section class="filters">
           <h2 class="visually-hidden">Фильтры товаров</h2>
-          <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <div class="filter-wrapper-first">
               <fieldset>
                 <legend>Инфраструктура:</legend>
@@ -75,26 +75,25 @@
               </fieldset>
             </div>
             <div class="range-filter">
-          <form action="https://echo.htmlacademy.ru">
-          <fieldset class="multiply-filter">
-          <legend>Стоимость в сутки (р):</legend>
-          <div class="price-controls">
-          <label class="min-price">от <input name="min-price" type="text" value="0">
-          </label>
-          <label class="max-price">до <input name="max-price" type="text" value="3000">
-          </label>
-          </div>
-          <div class="range-controls">
-          <div class="scale">
-          <div class="bar"></div>
-          </div>
-          <div class="toggle toggle-min"></div>
-          <div class="toggle toggle-max"></div>
-          </div>
-          </fieldset>
-          <button class="show-btn" type="submit">Показать</button>
+              <fieldset class="multiply-filter">
+                <legend>Стоимость в сутки (р):</legend>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0">
+                  </label>
+                  <label class="max-price">до <input name="max-price" type="text" value="3000">
+                  </label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </fieldset>
+              <button class="show-btn" type="submit">Показать</button>
+            </div>
           </form>
-          </div>
         </section>
         <section>
           <div class="sort-wrapper">

@@ -135,6 +135,20 @@ a {
 		min-height: 508px;
 }
 
+.img-background-wrapper::after {
+	  content: "";
+	  position: absolute;
+
+    bottom: .5px;
+
+    background: url(../img/polygon.svg) no-repeat center bottom;
+
+    z-index: 1;
+
+    height: 58px;
+    width: 1200px;
+}
+
 .img-background {
 	position: absolute;
 
@@ -753,6 +767,10 @@ a {
 	position: relative;
 }
 
+.map-iframe {
+	border: 0px;
+}
+
 .copyright-logo {
 	width: 115px;
 	height: 41px;
@@ -1097,6 +1115,8 @@ footer.index {
 
 .sort-btn:active {
 	color: #000000;
+
+	border-color: transparent;
 }
 
 .sort-btn-item:nth-child(1) {
