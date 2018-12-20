@@ -75,7 +75,7 @@ a {
 	margin:0;
 	padding: 0;
 	margin-top: 15px;
-	margin-bottom: 18px;
+	margin-bottom: 12px;
 
 	display: flex;
 
@@ -156,7 +156,7 @@ a {
 
 	z-index:1;
 
-	top:220px;
+	top:200px;
 }
 
 .img-welcome {
@@ -185,7 +185,7 @@ a {
 
 	z-index: 1;
 
-	padding-bottom: 55px;
+	padding-bottom: 45px;
 }
 
 .info-wrapper h1 {
@@ -215,7 +215,7 @@ a {
 .reason-content {
 	text-align: center;
 
-	padding-top: 45px;
+	padding-top: 30px;
 
 	width: 400px;
 
@@ -843,7 +843,7 @@ footer.index {
 }
 
 .filter legend {
-	margin-bottom: 25px;
+	margin-bottom: 8px;
 
 	font-size: 16px;
 	font-weight: 700;
@@ -853,11 +853,13 @@ footer.index {
 
 .filter ul {
 	list-style: none;
+
+	margin-top:22px;
 }
 
 .filter-option label {
 	color: white;
-}
+}c
 
 .filter-option {
 	position: relative;
@@ -938,7 +940,7 @@ footer.index {
   position: relative;
   
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   font-size: 0;
 
@@ -1027,7 +1029,7 @@ footer.index {
 
   margin-left:auto;
   margin-right: 73px;
-  padding-left:10px;
+  padding-left:12px;
 
   color: #ffffff;
 }
@@ -1269,8 +1271,8 @@ footer.index {
 .catalog-item {
 	border-bottom: 1px solid #e5e5e5;
 	
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 29px;
+	padding-bottom: 29px;
 	padding-left: 73px;
 	padding-right: 73px;
 }
