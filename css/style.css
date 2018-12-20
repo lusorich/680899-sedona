@@ -156,7 +156,9 @@ a {
 
 	z-index:1;
 
-	top:200px;
+	top:225px;
+
+	padding-bottom: 57px;
 }
 
 .img-welcome {
@@ -221,14 +223,16 @@ a {
 
 	background-color: #81b3d2;
 
+	padding-left: 49px;
+	padding-right: 49px;
+
 }
 
 .reason-content h2 {
-	padding-left: 125px;
-	padding-right: 124px;
+	padding-left: 75px;
+	padding-right: 76px;
 }
 
-.reason-content p,
 .recommended-wrapper p {
 	padding-left: 55px;
 	padding-right: 55px;
