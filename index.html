@@ -55,22 +55,22 @@
           <div class="reason-img"> <img src="img/reason-1.jpg" alt="Городок"></div>
         </section>
         <section class="recommended">
-          <div class="recommended-content">
-            <h2>Жильё</h2>
+          <div class="recommended-wrapper">
+            <h2 class="recommended-content">Жильё</h2>
             <p>
               Рекомендуем пожить в настоящем
               мотеле, всё как в кино!
             </p>
           </div>
-          <div class="recommended-content">
-            <h2>Еда</h2>
+          <div class="recommended-wrapper">
+            <h2 class="recommended-content">Еда</h2>
             <p>
               Всегда заказывайте фирменный бургер,
               вы не разочаруетесь!
             </p>
           </div>
-          <div class="recommended-content">
-            <h2>Сувениры</h2>
+          <div class="recommended-wrapper">
+            <h2 class="recommended-content">Сувениры</h2>
             <p>
               Не только китайского, но и местного
               производства!
@@ -127,17 +127,18 @@
           </div>
         </section>
         <section class="search-hotel">
-          <div class="search-hotel-wrapper">
+          <div class="search-hotel-info">
             <h3>Заинтересовались?</h3>
             <p>
               Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
+          </div>
             <div class="search-hotel-btn-wrapper">
               <button class="search-hotel-btn" type="button">Поиск гостиницы в Седоне</button>
-              <div class="search-hotel-popup">
+              <div class="search-hotel-popup-wrapper">
                 <h2 class="visually-hidden">Параметры поиска гостиницы</h2>
-                <form action="https://echo.htmlacademy.ru" method="post">
+                <form class="search-hotel-popup" action="https://echo.htmlacademy.ru" method="post">
                   <div class="chose-wrapper">
                     <label for="chose-date-arrival">Дата заезда:</label>
                     <div class="chose-date-wrapper">
@@ -214,7 +215,6 @@
                 </form>
               </div>
             </div>
-          </div>
         </section>
       </main>
       <div class="map">
