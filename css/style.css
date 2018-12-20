@@ -900,6 +900,33 @@ footer.index {
 	margin-top: 23px;
 }
 
+.filter-input:disabled + .filter-checkbox::before {
+	content: "";
+
+	position: absolute;
+	left:0;
+	bottom: 1px;
+
+	width:23px;
+	height:23px;
+
+	background-image: url(../img/disable-checkbox-off.svg);
+}
+
+
+.filter-input:checked:disabled + .filter-checkbox::before {
+	content: "";
+
+	position: absolute;
+	left:0;
+	bottom: 1px;
+
+	width:27px;
+	height:23px;
+
+	background-image: url(../img/disable-checkbox-on.svg);
+}
+
 .multiply-filter {
 	margin:0;
 	padding:0;
