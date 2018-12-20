@@ -539,19 +539,19 @@ a {
 }
 
 .search-hotel-popup-wrapper.show {
-	animation: popupshow 0.7s forwards;
+	animation: popupshow 0.6s forwards;
 }
 
 @keyframes popupshow  {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translateY(-90%);
+            transform: translateY(-90%);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
