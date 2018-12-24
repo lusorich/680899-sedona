@@ -100,6 +100,10 @@ a {
 	color: #766357;
 }
 
+.header-nav-phrase.active {
+	cursor: pointer;
+}
+
 .header-nav-phrase:hover {
 	color: #81b3d2;
 }
@@ -145,6 +149,9 @@ a {
 .img-background-wrapper {
 		position: relative;
 
+		background: url("../img/background.jpg") no-repeat top center;
+		background-color: #abbecb;
+
 		min-height: 508px;
 }
 
@@ -162,30 +169,12 @@ a {
     width: 1200px;
 }
 
-.img-background {
-	position: absolute;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-
-	-webkit-transform: translateY(-27.5%);
-
-	        -ms-transform: translateY(-27.5%);
-
-	    transform: translateY(-27.5%);
-
-	z-index:1;
-
-	top:225px;
-	
-	padding-bottom: 57px;
-}
-
 .img-welcome {
 	position: absolute;
 
 	left:50%;
 	margin-left: -230px;
-	top:74px;
+	top:76px;
 
 	z-index: 1;
 }
@@ -238,6 +227,10 @@ a {
 .reason-content {
 	text-align: center;
 
+	-webkit-box-sizing: border-box;
+
+	        box-sizing: border-box;
+
 	padding-top: 45px;
 
 	width: 400px;
@@ -275,6 +268,11 @@ a {
 .reason-img {
 	line-height: 0;
 	font-size: 0;
+}
+
+.reason-img img {
+	max-width: 100%;
+	height: auto;
 }
 
 .recommended {
@@ -527,11 +525,13 @@ a {
   height: 0; 
 }
 
-.chose-date:hover {
+.chose-date:hover,
+.chose-number:hover {
 	background-color: #ebebeb;
 }
 
-.chose-date:focus {
+.chose-date:focus,
+.chose-number:focus {
 	background-color: #ffffff;
 	
 	-webkit-box-shadow: inset 0 0 0 2px #e5e5e5;
@@ -1362,7 +1362,7 @@ footer.index {
 	font-weight: 700;
 
 	margin:0;
-	padding-right: 50px;
+	padding-right: 47px;
 }
 
 .sort-phrase {
@@ -1415,7 +1415,7 @@ footer.index {
 }
 
 .sort-btn-item:nth-child(2) {
-	padding-right: 32px;
+	padding-right: 35px;
 }
 
 .sort-btn.active{
@@ -1550,6 +1550,8 @@ footer.index {
 }
 
 .catalog-item-info {
+	width:700px;
+
 	margin-left: 30px;
 }
 
@@ -1562,6 +1564,11 @@ footer.index {
 .catalog-item-img {
 	line-height: 0;
 	font-size:0;
+}
+
+.catalog-item-img img {
+	max-width: 100%;
+	height: auto;
 }
 
 .catalog-item-info span {
@@ -1662,7 +1669,6 @@ footer.index {
 	font-size: 0;
 
 	background-image: url(../img/star.svg)
-
 }
 
 .raiting {
