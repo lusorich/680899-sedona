@@ -1274,8 +1274,15 @@ c .filter-option {
 }
 
 .catalog-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   min-width: 700px;
   margin-left: 30px;
@@ -1288,7 +1295,7 @@ c .filter-option {
 }
 
 .catalog-item-img {
-	min-width: 135px;
+  min-width: 135px;
   line-height: 0;
   font-size: 0;
 }
@@ -1363,7 +1370,12 @@ c .filter-option {
 }
 
 .catalog-item-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
   margin-left: auto;
@@ -1389,7 +1401,7 @@ c .filter-option {
 }
 
 .rating {
-	margin-top:45px;
+  margin-top: 45px;
   padding-top: 6px;
   padding-bottom: 2px;
   padding-left: 16px;
