@@ -868,7 +868,7 @@ footer.index {
   background-position: center;
   background-color: #3d4e57;
   padding-top: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
 .filter {
@@ -910,7 +910,7 @@ footer.index {
 
 .filter ul {
   list-style: none;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .filter-option label {
@@ -934,7 +934,7 @@ c .filter-option {
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
+  top: -3px;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
@@ -944,7 +944,7 @@ c .filter-option {
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
+  top: -3px;
   width: 27px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
@@ -963,7 +963,7 @@ c .filter-option {
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
+  top: -3px;
   width: 23px;
   height: 23px;
   background-image: url(../img/disable-checkbox-off.svg);
@@ -973,7 +973,7 @@ c .filter-option {
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
+  top: -3px;
   width: 27px;
   height: 23px;
   background-image: url(../img/disable-checkbox-on.svg);
